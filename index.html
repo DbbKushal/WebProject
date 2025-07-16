@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money Swapper Thing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="everythingWrapperBoxThing">
+      <h1 style="color: #333399;">💰 Currency Swap-o-matic 💸</h1>
+
+      <div class="theBoxInside">
+        <input type="number" id="userAmount" placeholder="how much to swap?" />
+
+        <div class="selectorBoxes">
+          <label for="fromCurrency">FROM:</label>
+          <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+          </select>
+
+          <label for="toCurrency">TO:</label>
+          <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+          </select>
+        </div>
+
+        <button onclick="doTheMathPlease()">Convert it!</button>
+
+        <div class="resultBox" id="theFinalOutputBox"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
